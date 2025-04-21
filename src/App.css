@@ -1,53 +1,80 @@
 .app {
-  display: flex;
   width: 500px;
-  margin : 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap : 10px;
+  gap: 10px;
 }
 
 h1 {
-  color: rgb(37,147,255);
+  color: #2593ff;
 }
 
-ul.todo-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.todo-item {
+.editor {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 0;
+  gap: 10px;
 }
 
-.todo-item input[type="checkbox"] {
-  margin-right: 10px;
+.editor input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
+.editor button {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: #2593ff;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap : 20px
+  gap: 20px;
 }
 
-.list >input{
+.list input {
   width: 100%;
   border: none;
-  border-bottom : 1px solid rgb(220,220,220);
-  padding : 15px 0px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding: 15px 0;
 }
 
-.list >input:focus {
+.list input:focus {
   outline: none;
-  border-bottom: 1px solid rgb(37,147,255);
-
+  border-bottom: 1px solid rgb(37, 147, 255);
 }
 
-.list .todos_wrapper {
+.todoitem {
   display: flex;
-  flex-direction: column;
-  gap : 20px;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.todoitem input {
+  width: 20px;
+}
+
+.todoitem .content {
+  flex: 1;
+}
+
+.todoitem .date {
+  font-size: 14px;
+  color: gray;
+}
+
+.todoitem button {
+  cursor: pointer;
+  color: gray;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
 }

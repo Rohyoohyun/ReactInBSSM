@@ -29,7 +29,7 @@ export default function App() {
     setTodos(todos.filter((t) => t.id !== id));
   };
 
-  const filtered = todos.filter((t) =>
+  const filtered = todos.filter((t) => // (과제2) 대소문자 구별X 검색가능! 
     t.text.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -37,7 +37,12 @@ export default function App() {
     <div className="app">
       <Header today={today} />
       <Editor todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-      <List todos={filtered} handleDelete={handleDelete} search={search} setSearch={setSearch} />
+      <List
+        todos={filtered}
+        handleDelete={handleDelete}
+        search={search}
+        setSearch={setSearch}
+      />
     </div>
   );
 }
