@@ -1,0 +1,31 @@
+.list-header {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .list-search-input {
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none; /* 모든 border 제거 */
+    outline: none; /* 클릭 시 외부 테두리 제거 */
+    border-bottom: 1px solid transparent; /* 기본 상태에서는 보이지 않는 투명한 밑줄 */
+    transition: border-bottom 0.3s ease; /* 부드러운 효과 추가 */
+  }
+  
+  .list-search-input:focus {
+    border-bottom: 1px solid rgb(37, 147, 255); /* 클릭(포커스) 시 파란색 밑줄 추가 */
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  

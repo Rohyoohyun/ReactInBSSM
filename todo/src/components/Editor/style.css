@@ -1,0 +1,21 @@
+.editor-container {
+    margin: 1rem;
+    display: flex;
+  }
+  
+.editor-input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    padding: .8rem;
+    margin-right: 0.5rem;
+    font-size: 12px;
+}
+
+.editor-btn {
+    background-color: #2593ff;
+    border: none;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 0.2rem;
+}  
